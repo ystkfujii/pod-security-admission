@@ -78,6 +78,9 @@ func createValidators(prof SecurityProfile) []validators.Validator {
 	if !prof.Seccomp {
 		list = append(list, validators.DenyUnsafeSeccomp{})
 	}
+	//if !prof.UnconfinedSeccomp {
+	//	list = append(list, validators.DenyUnconfinedSeccomp{})
+	//}
 	if !prof.HostProbesAndLifecycle {
 		list = append(list, validators.DenyHostProbesAndLifecycle{})
 	}

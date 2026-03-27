@@ -24,5 +24,6 @@ type SecurityProfile struct {
 	ForceRunAsNonRoot        bool                         `json:"forceRunAsNonRoot"`
 	RootGroups               bool                         `json:"rootGroups"`
 	Seccomp                  bool                         `json:"seccomp"`
+	UnconfinedSeccomp        bool                         `json:"unconfinedSeccomp"`
 	HostProbesAndLifecycle   bool                         `json:"hostProbesAndLifecycle"`
 }
